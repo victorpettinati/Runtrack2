@@ -1,7 +1,11 @@
-<?php 
-$texte = "Tous ces instants seront perdus dans le temps comme les larmes sous la pluie.";
+<?php
+// La chaîne de caractères
+$str = "Tous ces instants seront perdus dans le temps comme les larmes sous la pluie.";
 
-for ($i = 0; $i < strlen($texte); $i += 2) {
-    echo $texte[$i];
+// Parcourir la chaîne en affichant un caractère sur deux
+$i = 0;
+while (isset($str[$i])) {
+    echo $str[$i];
+    $i += 2;
 }
 ?>
