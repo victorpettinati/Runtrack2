@@ -40,7 +40,7 @@
       }
 
       // Construction de la base
-      $base = "+" . str_repeat("_", $largeur - 2) . "+";
+      $base = "|" . str_repeat("_", $largeur - 2) . "|";
 
       // Affichage de la maison
       echo "<pre>";
