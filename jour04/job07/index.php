@@ -31,7 +31,7 @@
 
       // Construction du toit
       for ($i = 0; $i < $hauteur; $i++) {
-          $toit .= str_repeat(" ", $hauteur - $i - 1) . "/" . str_repeat(" ", $i * 2) . "\\" . "\n";
+          $toit .= str_repeat(" ", $hauteur - $i - 1) . "/" . str_repeat("_", $i * 2) . "\\" . "\n";
       }
 
       // Construction des murs
