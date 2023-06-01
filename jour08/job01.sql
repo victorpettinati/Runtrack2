@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mer. 31 mai 2023 à 08:26
+-- Généré le : mer. 31 mai 2023 à 08:25
 -- Version du serveur : 8.0.33
 -- Version de PHP : 8.0.26
 
@@ -20,6 +20,38 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `jour08`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `etages`
+--
+
+DROP TABLE IF EXISTS `etages`;
+CREATE TABLE IF NOT EXISTS `etages` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nom` varchar(255) NOT NULL,
+  `numero` int NOT NULL,
+  `superficie` int NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `etudiants`
+--
+
+DROP TABLE IF EXISTS `etudiants`;
+CREATE TABLE IF NOT EXISTS `etudiants` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `prenom` varchar(255) NOT NULL,
+  `nom` varchar(255) NOT NULL,
+  `naissance` date NOT NULL,
+  `sexe` varchar(25) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
